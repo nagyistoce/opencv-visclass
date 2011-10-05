@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<database version="0.1" name="HomogeneousLittleDogSmallTest" appendToLogDir=".WordTest" appendToDbDir=".WordTest">
+
+  <features type="SURF">
+    <!-- Common parameters -->
+    <octaves      value="4"/>
+    <octaveLayers value="2"/>
+    <threshold    value="4000"/>
+
+    <!-- Dynamic adjuster parameters (SURF only) -->
+    <adjusterOn        value="true"/>
+    <adjusterMin       value="100"/>
+    <adjusterMax       value="150"/>
+    <adjusterIter      value="50"/>
+    <adjusterLearnRate value="2.0"/>
+    <adjusterMemory    value="true"/>
+
+    <!-- Other parameters -->
+    <autoLevels  value="false"/>
+    <generateLog value="true"/>
+    <cache       value="true"/>
+  </features>
+
+  <histograms type="color">
+    <bins       value="256"/>
+    <log        value="true"/>
+    <cache      value="true"/>
+  </histograms>
+
+  <dictionary type="kmeans">
+    <iterations value="10"/>
+    <words      value="100"/>
+    <log        value="true"/>
+    <cache      value="true"/>
+  </dictionary>
+
+  <classifier type="svm" input="words">
+    <type       value="C_SVC"/>
+    <kernelType value="POLY"/>
+    <gamma      value="0.5"/>
+    <degree     value="2"/>
+    <log        value="true"/>
+  </classifier>
+
+  <classifier type="svm" input="color">
+    <type       value="C_SVC"/>
+    <kernelType value="POLY"/>
+    <gamma      value="0.5"/>
+    <degree     value="2"/>
+    <log        value="true"/>
+  </classifier>
+
+  <display>
+    <!-- A set of unique colors for displaying label information -->
+    <!-- asphalt -->
+    <color r="70" g="70" b="70"/>
+    <!-- grass -->
+    <color r="0" g="255" b="0"/>
+    <!-- gravel -->
+    <color r="255" g="255" b="255"/>
+    <!-- soil  -->
+    <color r="255" g="255" b="0"/>
+    <!-- mud -->
+    <color r="255" g="0" b="0"/>
+    <!-- woodchip -->
+    <color r="255" g="180" b="0"/>
+  </display>
+
+  <entry label="BigRocks" file="BigRocks.1.2011-07-06-190730.jpg"/>
+  <entry label="BigRocks" file="BigRocks.1.2011-07-06-190757.jpg"/>
+  <entry label="BigRocks" file="BigRocks.1.2011-07-06-190818.jpg"/>
+  <entry label="BigRocks" file="BigRocks.2.2011-07-15-105923.jpg"/>
+  <entry label="BigRocks" file="BigRocks.2.2011-07-15-105955.jpg"/>
+  <entry label="BigRocks" file="BigRocks.2.2011-07-15-110009.jpg"/>
+  <entry label="Grass" file="Grass.1.2011-07-15-110206.jpg"/>
+  <entry label="Grass" file="Grass.1.2011-07-15-110239.jpg"/>
+  <entry label="Grass" file="Grass.1.2011-07-15-110310.jpg"/>
+  <entry label="Grass" file="Grass.2.2011-07-15-110551.jpg"/>
+  <entry label="Grass" file="Grass.2.2011-07-15-110605.jpg"/>
+  <entry label="Grass" file="Grass.2.2011-07-15-110642.jpg"/>
+  <entry label="Grass" file="Grass.3.2011-07-15-110753.jpg"/>
+  <entry label="Grass" file="Grass.3.2011-07-15-110817.jpg"/>
+  <entry label="Grass" file="Grass.3.2011-07-15-110855.jpg"/>
+  <entry label="RubberChips" file="RubberChips.1.2011-07-15-105541.jpg"/>
+  <entry label="RubberChips" file="RubberChips.1.2011-07-15-105602.jpg"/>
+  <entry label="RubberChips" file="RubberChips.1.2011-07-15-105616.jpg"/>
+  <entry label="RubberChips" file="RubberChips.2.2011-07-15-111313.jpg"/>
+  <entry label="RubberChips" file="RubberChips.2.2011-07-15-111332.jpg"/>
+  <entry label="RubberChips" file="RubberChips.2.2011-07-15-111346.jpg"/>
+  <entry label="RubberTile" file="RubberTile.1.2011-07-06-183925.jpg"/>
+  <entry label="RubberTile" file="RubberTile.1.2011-07-06-183959.jpg"/>
+  <entry label="RubberTile" file="RubberTile.1.2011-07-06-184019.jpg"/>
+  <entry label="RubberTile" file="RubberTile.2.2011-07-06-184247.jpg"/>
+  <entry label="RubberTile" file="RubberTile.2.2011-07-06-184350.jpg"/>
+  <entry label="RubberTile" file="RubberTile.2.2011-07-06-184418.jpg"/>
+  <entry label="RubberTile" file="RubberTile.3.2011-07-06-185331.jpg"/>
+  <entry label="RubberTile" file="RubberTile.3.2011-07-06-185511.jpg"/>
+  <entry label="RubberTile" file="RubberTile.3.2011-07-06-185542.jpg"/>
+  <entry label="SmallRocks" file="SmallRocks.1.2011-07-06-182745.jpg"/>
+  <entry label="SmallRocks" file="SmallRocks.1.2011-07-06-183016.jpg"/>
+  <entry label="SmallRocks" file="SmallRocks.1.2011-07-06-183054.jpg"/>
+  <entry label="SmallRocks" file="SmallRocks.2.2011-07-06-184805.jpg"/>
+  <entry label="SmallRocks" file="SmallRocks.2.2011-07-06-184854.jpg"/>
+  <entry label="SmallRocks" file="SmallRocks.2.2011-07-06-184926.jpg"/>
+  <entry label="SmallRocks" file="SmallRocks.3.2011-07-06-190031.jpg"/>
+  <entry label="SmallRocks" file="SmallRocks.3.2011-07-06-190049.jpg"/>
+  <entry label="SmallRocks" file="SmallRocks.3.2011-07-06-190105.jpg"/>
+
+</database>
