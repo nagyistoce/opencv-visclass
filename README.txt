@@ -1,5 +1,5 @@
 Development and testing was done using Visual Studio 2008 in Windows XP/Windows 7 using 
-wxWidgets 2.8.11, OpenCV 2.2, TinyXML 2.5.5, HistLib 0.2 libraries
+wxWidgets 2.8.11, OpenCV 2.2, TinyXML 2.6.0, HistLib 0.2 libraries
 In theory it is possible to compile/run everything under Linux, but has not been tested.  
 
 External Package Sites:
