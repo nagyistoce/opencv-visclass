@@ -64,7 +64,7 @@
 				Name="VCLinkerTool"
 				UseLibraryDependencyInputs="true"
 				AdditionalDependencies="wxmsw28d_core.lib wxbase28d.lib wxbase28d_net.lib wsock32.lib rpcrt4.lib comctl32.lib opencv_core220d.lib opencv_imgproc220d.lib opencv_highgui220d.lib opencv_features2d220d.lib opencv_objdetect220d.lib opencv_ml220d.lib tinyxmld.lib"
-				OutputFile="$(OutDir)\$(ProjectName)$(ConfigurationName).exe"
+				OutputFile="$(ProjectDir)\$(ProjectName)$(ConfigurationName).exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="&quot;$(WXWIDGETSDIR)\lib\vc_lib&quot;;&quot;$(OPENCVDIR)\lib&quot;;&quot;$(TINYXMLDIR)\Debug&quot;"
 				GenerateDebugInformation="true"
@@ -94,169 +94,8 @@
 			/>
 		</Configuration>
 		<Configuration
-			Name="ReleaseGUI|Win32"
+			Name="Release|Win32"
 			OutputDirectory="$(ProjectDir)"
-			IntermediateDirectory="$(ProjectDir)\build\vs2008\$(ConfigurationName)"
-			ConfigurationType="1"
-			CharacterSet="0"
-			WholeProgramOptimization="1"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				Optimization="2"
-				InlineFunctionExpansion="0"
-				EnableIntrinsicFunctions="false"
-				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="&quot;$(OPENCVDIR)\include&quot;;&quot;$(OPENCVDIR)\include\opencv&quot;;&quot;$(WXWIDGETSDIR)\include&quot;;&quot;$(TINYXMLDIR)&quot;;&quot;$(WXWIDGETSDIR)\lib\vc_lib\msw&quot;;include;..\visualRecognitionLib\include"
-				PreprocessorDefinitions="WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS"
-				StringPooling="true"
-				RuntimeLibrary="2"
-				EnableFunctionLevelLinking="true"
-				WarningLevel="4"
-				DebugInformationFormat="3"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLinkerTool"
-				UseLibraryDependencyInputs="true"
-				AdditionalDependencies="wxmsw28_core.lib wxbase28.lib wxbase28_net.lib comctl32.lib rpcrt4.lib wsock32.lib opencv_core220.lib opencv_imgproc220.lib opencv_highgui220.lib opencv_features2d220.lib opencv_objdetect220.lib opencv_ml220.lib tinyxml.lib"
-				OutputFile="$(OutDir)\$(ProjectName)$(ConfigurationName).exe"
-				LinkIncremental="2"
-				AdditionalLibraryDirectories="&quot;$(OPENCVDIR)\lib&quot;;&quot;$(WXWIDGETSDIR)\lib\vc_lib&quot;;&quot;$(TINYXMLDIR)\Release&quot;"
-				IgnoreAllDefaultLibraries="false"
-				GenerateDebugInformation="false"
-				SubSystem="2"
-				OptimizeReferences="2"
-				EnableCOMDATFolding="2"
-				LinkTimeCodeGeneration="0"
-				TargetMachine="1"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCAppVerifierTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="DebugConsole|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
-			IntermediateDirectory="$(ConfigurationName)"
-			ConfigurationType="1"
-			CharacterSet="2"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				Optimization="0"
-				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="&quot;$(OPENCVDIR)\include&quot;;&quot;$(OPENCVDIR)\include\opencv&quot;;&quot;$(WXWIDGETSDIR)\include&quot;;&quot;$(WXWIDGETSDIR)\lib\vc_lib\msw&quot;;include;..\visualRecognitionLib\include"
-				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
-				MinimalRebuild="true"
-				BasicRuntimeChecks="3"
-				RuntimeLibrary="3"
-				UsePrecompiledHeader="0"
-				PrecompiledHeaderThrough=""
-				WarningLevel="4"
-				DebugInformationFormat="3"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLinkerTool"
-				UseLibraryDependencyInputs="true"
-				AdditionalDependencies="wxmsw28d_core.lib wxbase28d.lib opencv_core220d.lib opencv_imgproc220d.lib opencv_highgui220d.lib opencv_features2d220d.lib opencv_objdetect220d.lib opencv_ml220d.lib tinyxmld.lib"
-				OutputFile="$(OutDir)\$(ProjectName)$(ConfigurationName).exe"
-				LinkIncremental="2"
-				AdditionalLibraryDirectories="&quot;$(WXWIDGETSDIR)\lib\vc_lib&quot;;&quot;$(OPENCVDIR)\lib&quot;;&quot;$(TINYXMLDIR)\Debug&quot;"
-				GenerateDebugInformation="true"
-				SubSystem="1"
-				TargetMachine="1"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCAppVerifierTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="RelaseConsole|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
 			CharacterSet="0"
@@ -304,7 +143,7 @@
 				Name="VCLinkerTool"
 				UseLibraryDependencyInputs="true"
 				AdditionalDependencies="wxmsw28_core.lib wxbase28.lib wxbase28_net.lib comctl32.lib rpcrt4.lib wsock32.lib opencv_core220.lib opencv_imgproc220.lib opencv_highgui220.lib opencv_features2d220.lib opencv_objdetect220.lib opencv_ml220.lib tinyxml.lib"
-				OutputFile="$(OutDir)\$(ProjectName)$(ConfigurationName).exe"
+				OutputFile="$(ProjectDir)\$(ProjectName)$(ConfigurationName).exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="&quot;$(OPENCVDIR)\lib&quot;;&quot;$(WXWIDGETSDIR)\lib\vc_lib&quot;;&quot;$(TINYXMLDIR)\Release&quot;"
 				IgnoreAllDefaultLibraries="false"
